@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -7007,6 +7007,19 @@ Based on Copal PN CSS-1210B (or 1210TB)</description>
 <wire x1="-1.75" y1="-2" x2="1.75" y2="-2" width="0.127" layer="51"/>
 <wire x1="1.75" y1="-2" x2="1.75" y2="0" width="0.127" layer="51"/>
 <text x="-4" y="4.5" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<wire x1="-4.15" y1="3" x2="-4.15" y2="0" width="0.127" layer="21"/>
+<wire x1="-4.15" y1="0" x2="4.15" y2="0" width="0.127" layer="21"/>
+<wire x1="4.15" y1="0" x2="4.15" y2="3" width="0.127" layer="21"/>
+<wire x1="4.15" y1="3" x2="-4.15" y2="3" width="0.127" layer="21"/>
+<wire x1="-4.3" y1="3" x2="4.25" y2="3" width="0.127" layer="39"/>
+<wire x1="4.25" y1="3" x2="4.25" y2="0" width="0.127" layer="39"/>
+<wire x1="4.25" y1="0" x2="2" y2="0" width="0.127" layer="39"/>
+<wire x1="-4.25" y1="0" x2="-4.25" y2="3.05" width="0.127" layer="39"/>
+<wire x1="-4.25" y1="0" x2="-2" y2="0" width="0.127" layer="39"/>
+<wire x1="-2" y1="0" x2="2" y2="0" width="0.127" layer="39"/>
+<wire x1="2" y1="0" x2="2" y2="-2" width="0.127" layer="39"/>
+<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="39"/>
+<wire x1="-2" y1="-2" x2="-2" y2="0" width="0.127" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -8012,6 +8025,35 @@ Available in 2.0V, 3.0V, 3.3V versions, check part number&lt;br&gt;</description
 <pin name="GND" x="15.24" y="7.62" length="middle" direction="pwr" rot="R180"/>
 <pin name="SDA" x="15.24" y="10.16" length="middle" rot="R180"/>
 <text x="-10.16" y="15.24" size="2.1844" layer="125" font="vector">&gt;NAME</text>
+</symbol>
+<symbol name="SWITCH_SPDT">
+<description>&lt;b&gt;Single Pole, Dual Throw switch&lt;/b&gt;</description>
+<pin name="P$1" x="7.62" y="5.08" length="middle" rot="R180"/>
+<pin name="P$2" x="7.62" y="-5.08" length="middle" rot="R180"/>
+<pin name="P$3" x="-5.08" y="0" length="middle"/>
+<circle x="0" y="0" radius="0.803215625" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="0.254" x2="3.302" y2="3.556" width="0.254" layer="94"/>
+<text x="-2.54" y="7.62" size="1.6764" layer="125" font="vector">&gt;NAME</text>
+</symbol>
+<symbol name="MAX31855">
+<description>&lt;b&gt;MAX31855 Thermocouple amplifier with cold junction compensation, SPI communication&lt;/b&gt;&lt;br&gt;
+Maxim-ic PN MAX31855 (thermocouple code is appended at end of PN)&lt;br&gt;
+Digikey PN MAX31855K, MAX31855T, MAX31855J etc.&lt;br&gt;
+Surface mount, 8-SOIC Narrow, 3.0 to 3.6V supply</description>
+<pin name="GND" x="-12.7" y="7.62" length="middle" direction="pwr"/>
+<pin name="T-" x="-12.7" y="2.54" length="middle"/>
+<pin name="T+" x="-12.7" y="-2.54" length="middle"/>
+<pin name="VCC" x="-12.7" y="-7.62" length="middle" direction="pwr"/>
+<pin name="DNC" x="12.7" y="7.62" length="middle" direction="nc" rot="R180"/>
+<pin name="SO" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="!CS" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="SCK" x="12.7" y="-7.62" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<text x="-7.62" y="10.16" size="1.9304" layer="94">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -10108,6 +10150,52 @@ SOIC-16 narrow package (300 mils)
 <connect gate="G$1" pin="SQW/!INT" pad="P$2"/>
 <connect gate="G$1" pin="VBACKUP" pad="P$14"/>
 <connect gate="G$1" pin="VCC" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SWITCH_SLIDE_SMD_SPDT">
+<description>&lt;b&gt;Single Pole Dual Throw switch&lt;/b&gt;&lt;br&gt;
+Copal PN CSS-1210TB (surface mount, right-angle)
+Digikey PN 563-1091-1-ND</description>
+<gates>
+<gate name="G$1" symbol="SWITCH_SPDT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SWITCH_SMD_RA_SPDT">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3_COMMON"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX31855">
+<description>&lt;b&gt;MAX31855 Thermocouple amplifier with cold junction compensation, SPI communication&lt;/b&gt;&lt;br&gt;
+Maxim-ic PN MAX31855 (thermocouple code is appended at end of PN)&lt;br&gt;
+Digikey PN MAX31855K, MAX31855T, MAX31855J etc.&lt;br&gt;
+Surface mount, 8-SOIC Narrow, 3.0 to 3.6V supply</description>
+<gates>
+<gate name="G$1" symbol="MAX31855" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO08">
+<connects>
+<connect gate="G$1" pin="!CS" pad="6"/>
+<connect gate="G$1" pin="DNC" pad="8"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="SCK" pad="5"/>
+<connect gate="G$1" pin="SO" pad="7"/>
+<connect gate="G$1" pin="T+" pad="3"/>
+<connect gate="G$1" pin="T-" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
