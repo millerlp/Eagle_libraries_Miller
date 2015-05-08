@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -79,7 +79,7 @@
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
-<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="126" name="_bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -6986,6 +6986,27 @@ with :import-pads-powerpcb-v5.ulp Version 1.0.1 at 04.10.2012 14:11:20</descript
 <wire x1="3.4" y1="5.1" x2="-3.4" y2="5.1" width="0.127" layer="21"/>
 <text x="1" y="-3" size="1.27" layer="25" font="vector" rot="R90">&gt;NAME</text>
 </package>
+<package name="SWITCH_SMD_RA_SPDT">
+<description>&lt;b&gt;Slide switch SPDT right angle &lt;/b&gt;&lt;br&gt;
+Based on Copal PN CSS-1210B (or 1210TB)</description>
+<smd name="P$1" x="-3" y="3.75" dx="1.27" dy="0.635" layer="1" rot="R270"/>
+<smd name="P$2" x="-1" y="3.75" dx="1.27" dy="0.635" layer="1" rot="R270"/>
+<smd name="P$3_COMMON" x="1" y="3.75" dx="1.27" dy="0.635" layer="1" rot="R270"/>
+<hole x="-3.15" y="0.1" drill="0.9"/>
+<hole x="3.15" y="0.1" drill="0.9"/>
+<wire x1="-4.25" y1="0" x2="-1.75" y2="0" width="0.127" layer="51"/>
+<wire x1="-1.75" y1="0" x2="1.75" y2="0" width="0.127" layer="51"/>
+<wire x1="1.75" y1="0" x2="4.25" y2="0" width="0.127" layer="51"/>
+<wire x1="4.25" y1="0" x2="4.25" y2="3" width="0.127" layer="51"/>
+<wire x1="4.25" y1="3" x2="-4.25" y2="3" width="0.127" layer="51"/>
+<wire x1="-4.25" y1="3" x2="-4.25" y2="0" width="0.127" layer="51"/>
+<text x="-3.41" y="1.45" size="1.27" layer="51" font="vector">1</text>
+<text x="-1.39" y="1.48" size="1.27" layer="51" font="vector">2</text>
+<text x="0.5" y="1.5" size="1.27" layer="51" font="vector">C</text>
+<wire x1="-1.75" y1="0" x2="-1.75" y2="-2" width="0.127" layer="51" style="shortdash"/>
+<wire x1="-1.75" y1="-2" x2="1.75" y2="-2" width="0.127" layer="51" style="longdash"/>
+<wire x1="1.75" y1="-2" x2="1.75" y2="0" width="0.127" layer="51" style="longdash"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MS5803">
@@ -7947,6 +7968,49 @@ GND1, GND2, GND3, GND4 are the connector case grounds.</description>
 <pin name="4" x="7.62" y="0" visible="pad" direction="pas" function="dot" rot="R180"/>
 <pin name="5" x="-10.16" y="-2.54" visible="pad" direction="pas" function="dot"/>
 <pin name="6" x="7.62" y="-2.54" visible="pad" direction="pas" function="dot" rot="R180"/>
+</symbol>
+<symbol name="DS1339_8USOP">
+<description>Maxim DS1339 real time clock&lt;br&gt;
+8-pin µSOP package&lt;br&gt;
+Available in 2.0V, 3.0V, 3.3V versions, check part numbers</description>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="X1" x="-15.24" y="5.08" length="middle"/>
+<pin name="X2" x="-15.24" y="2.54" length="middle"/>
+<pin name="VBACKUP" x="-15.24" y="0" length="middle"/>
+<pin name="GND" x="-15.24" y="-2.54" length="middle"/>
+<pin name="SDA" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="SCL" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="SQW/!INT" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="VCC" x="15.24" y="5.08" length="middle" rot="R180"/>
+<text x="-5.08" y="10.16" size="2.1844" layer="125" font="vector">&gt;NAME</text>
+</symbol>
+<symbol name="DS1339C_SOIC16">
+<description>Maxim DS1339C real time clock with integrated crystal&lt;br&gt;
+Available in 2.0V, 3.0V, 3.3V versions, check part number&lt;br&gt;</description>
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<pin name="SCL" x="-15.24" y="10.16" length="middle"/>
+<pin name="SQW/!INT" x="-15.24" y="7.62" length="middle"/>
+<pin name="VCC" x="-15.24" y="5.08" length="middle" direction="pwr"/>
+<pin name="NC4" x="-15.24" y="2.54" length="middle"/>
+<pin name="NC5" x="-15.24" y="0" length="middle"/>
+<pin name="NC6" x="-15.24" y="-2.54" length="middle"/>
+<pin name="NC7" x="-15.24" y="-5.08" length="middle"/>
+<pin name="NC8" x="-15.24" y="-7.62" length="middle"/>
+<pin name="NC9" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="NC10" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="NC11" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="NC12" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="NC13" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="VBACKUP" x="15.24" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="15.24" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="SDA" x="15.24" y="10.16" length="middle" rot="R180"/>
+<text x="-10.16" y="15.24" size="2.1844" layer="125" font="vector">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -9984,6 +10048,65 @@ Digikey PN WM24066CT-ND</description>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS1339U">
+<description>&lt;b&gt;Maxim DS1339U real time clock&lt;/b&gt;&lt;br&gt;
+µSOP 8-pin package&lt;br&gt;
+Available in 2.0V, 3.0V, 3.3V versions, check part number&lt;br&gt;
+This is a different version than DS1339C, which has an internal crystal and larger package</description>
+<gates>
+<gate name="G$1" symbol="DS1339_8USOP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="USOP-8">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$4"/>
+<connect gate="G$1" pin="SCL" pad="P$6"/>
+<connect gate="G$1" pin="SDA" pad="P$5"/>
+<connect gate="G$1" pin="SQW/!INT" pad="P$7"/>
+<connect gate="G$1" pin="VBACKUP" pad="P$3"/>
+<connect gate="G$1" pin="VCC" pad="P$8"/>
+<connect gate="G$1" pin="X1" pad="P$1"/>
+<connect gate="G$1" pin="X2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS1339C_SOIC16">
+<description>&lt;b&gt;Maxim DS1339C real time clock with internal crystal&lt;br&gt;&lt;/b&gt;
+SOIC-16 narrow package (300 mils)
+&lt;br&gt;Available in 2.0V, 3.0V, 3.3V versions, check part number</description>
+<gates>
+<gate name="G$1" symbol="DS1339C_SOIC16" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC-16_0.300">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$15"/>
+<connect gate="G$1" pin="NC10" pad="P$10"/>
+<connect gate="G$1" pin="NC11" pad="P$11"/>
+<connect gate="G$1" pin="NC12" pad="P$12"/>
+<connect gate="G$1" pin="NC13" pad="P$13"/>
+<connect gate="G$1" pin="NC4" pad="P$4"/>
+<connect gate="G$1" pin="NC5" pad="P$5"/>
+<connect gate="G$1" pin="NC6" pad="P$6"/>
+<connect gate="G$1" pin="NC7" pad="P$7"/>
+<connect gate="G$1" pin="NC8" pad="P$8"/>
+<connect gate="G$1" pin="NC9" pad="P$9"/>
+<connect gate="G$1" pin="SCL" pad="P$1"/>
+<connect gate="G$1" pin="SDA" pad="P$16"/>
+<connect gate="G$1" pin="SQW/!INT" pad="P$2"/>
+<connect gate="G$1" pin="VBACKUP" pad="P$14"/>
+<connect gate="G$1" pin="VCC" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>

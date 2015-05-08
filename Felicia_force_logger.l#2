@@ -2971,6 +2971,8 @@ Matches Uno R3 footprint, but adds Due SPI 2x3 header, debug wire 4-pin header, 
 <wire x1="60.325" y1="1.27" x2="59.055" y2="1.27" width="0.127" layer="21"/>
 </package>
 <package name="POWER_JACK_PTH">
+<description>Larger holes for wide pins. &lt;br&gt;
+Should work with Digikey PN CP-202AH-ND</description>
 <wire x1="4.5" y1="13.7" x2="2.4" y2="13.7" width="0.2032" layer="21"/>
 <wire x1="-4.5" y1="3" x2="-4.5" y2="0.1" width="0.2032" layer="51"/>
 <wire x1="4.5" y1="0.1" x2="4.5" y2="3" width="0.2032" layer="51"/>
@@ -2983,6 +2985,24 @@ Matches Uno R3 footprint, but adds Due SPI 2x3 header, debug wire 4-pin header, 
 <pad name="PWR" x="0" y="13.7" drill="2.9972"/>
 <pad name="GND" x="0" y="7.7" drill="2.9972"/>
 <pad name="GNDBREAK" x="4.7" y="10.7" drill="2.9972" rot="R90"/>
+<text x="-5.08" y="0" size="1.778" layer="25" rot="R90">&gt;NAME</text>
+<text x="-5.08" y="8.89" size="1.778" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+<package name="POWER_JACK_PTH_SMALLHOLE">
+<description>Power Jack through-hole&lt;br&gt;
+Sized for small-pin jacks, 1mm pin width</description>
+<wire x1="4.5" y1="13.7" x2="2.4" y2="13.7" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="3" x2="-4.5" y2="0.1" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="0.1" x2="4.5" y2="3" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="0.1" x2="-4.5" y2="0.1" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="3" x2="4.5" y2="8.3" width="0.2032" layer="21"/>
+<wire x1="4.5" y1="13.7" x2="4.5" y2="13" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="3" x2="-4.5" y2="13.7" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="13.7" x2="-2.4" y2="13.7" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="3" x2="4.5" y2="3" width="0.2032" layer="21"/>
+<pad name="PWR" x="0" y="13.716" drill="1.4"/>
+<pad name="GND" x="0" y="7.62" drill="1.4"/>
+<pad name="GNDBREAK" x="4.7" y="10.7" drill="1.4" rot="R90"/>
 <text x="-5.08" y="0" size="1.778" layer="25" rot="R90">&gt;NAME</text>
 <text x="-5.08" y="8.89" size="1.778" layer="27" rot="R90">&gt;VALUE</text>
 </package>

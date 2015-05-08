@@ -79,7 +79,7 @@
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
-<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="126" name="_bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -6902,6 +6902,90 @@ This version has the surface mount pins easily accessible at the rear of the hou
 <wire x1="11.4" y1="20" x2="11.4" y2="15" width="0.127" layer="39"/>
 <wire x1="11.4" y1="15" x2="0" y2="15" width="0.127" layer="39"/>
 </package>
+<package name="MSOP8(MS8)">
+<description>Package generated from: MSOP8(MS8).asc (!PADS-POWERPCB-V5.0-BASIC! DESIGN DATABASE ASCII FILE 1.0)&lt;p&gt;
+
+with :import-pads-powerpcb-v5.ulp Version 1.0.1 at 04.10.2012 14:11:20</description>
+<wire x1="-0.565159375" y1="-0.435484375" x2="0.576771875" y2="-0.435484375" width="0.07741875" layer="21"/>
+<wire x1="0.576771875" y1="-0.435484375" x2="0.576771875" y2="0.435484375" width="0.07741875" layer="21"/>
+<wire x1="0.576771875" y1="0.435484375" x2="-0.565159375" y2="0.435484375" width="0.07741875" layer="21"/>
+<wire x1="-0.565159375" y1="0.435484375" x2="-0.565159375" y2="0.1451625" width="0.07741875" layer="21"/>
+<wire x1="-0.565159375" y1="0.1451625" x2="-0.381290625" y2="0.1451625" width="0.07741875" layer="21"/>
+<wire x1="-0.381290625" y1="0.1451625" x2="-0.381290625" y2="-0.1451625" width="0.07741875" layer="21"/>
+<wire x1="-0.381290625" y1="-0.1451625" x2="-0.565159375" y2="-0.1451625" width="0.07741875" layer="21"/>
+<wire x1="-0.565159375" y1="-0.1451625" x2="-0.565159375" y2="-0.435484375" width="0.07741875" layer="21"/>
+<text x="-0.260871875" y="-0.02268125" size="1.778" layer="27" align="center">&gt;NAME</text>
+<text x="-0.260871875" y="-0.7484875" size="1.778" layer="25" align="center">&gt;VALUE</text>
+<smd name="1" x="-0.3716125" y="-0.82741875" dx="0.58064375" dy="0.116128125" layer="1" rot="R90"/>
+<smd name="2" x="-0.123871875" y="-0.82741875" dx="0.58064375" dy="0.116128125" layer="1" rot="R90"/>
+<smd name="3" x="0.123871875" y="-0.82741875" dx="0.58064375" dy="0.116128125" layer="1" rot="R90"/>
+<smd name="4" x="0.3716125" y="-0.82741875" dx="0.58064375" dy="0.116128125" layer="1" rot="R90"/>
+<smd name="5" x="0.3716125" y="0.82741875" dx="0.58064375" dy="0.116128125" layer="1" rot="R90"/>
+<smd name="6" x="0.123871875" y="0.82741875" dx="0.58064375" dy="0.116128125" layer="1" rot="R90"/>
+<smd name="7" x="-0.123871875" y="0.82741875" dx="0.58064375" dy="0.116128125" layer="1" rot="R90"/>
+<smd name="8" x="-0.3716125" y="0.82741875" dx="0.58064375" dy="0.116128125" layer="1" rot="R90"/>
+</package>
+<package name="USOP-8">
+<description>Maxim µSOP µMax pattern package code U8+1&lt;br&gt;
+&lt;a href=http://pdfserv.maximintegrated.com/land_patterns/90-0092.PDF&gt;http://pdfserv.maximintegrated.com/land_patterns/90-0092.PDF&lt;/a&gt;</description>
+<smd name="P$1" x="-2.15" y="0.975" dx="1.35" dy="0.4" layer="1" rot="R180"/>
+<smd name="P$2" x="-2.15" y="0.325" dx="1.35" dy="0.4" layer="1" rot="R180"/>
+<smd name="P$3" x="-2.15" y="-0.325" dx="1.35" dy="0.4" layer="1" rot="R180"/>
+<smd name="P$4" x="-2.15" y="-0.975" dx="1.35" dy="0.4" layer="1" rot="R180"/>
+<smd name="P$5" x="2.15" y="-0.975" dx="1.35" dy="0.4" layer="1" rot="R180"/>
+<smd name="P$6" x="2.15" y="-0.325" dx="1.35" dy="0.4" layer="1" rot="R180"/>
+<smd name="P$7" x="2.15" y="0.325" dx="1.35" dy="0.4" layer="1" rot="R180"/>
+<smd name="P$8" x="2.15" y="0.975" dx="1.35" dy="0.4" layer="1" rot="R180"/>
+<wire x1="-1.55" y1="1.55" x2="-1.55" y2="-1.55" width="0.127" layer="51"/>
+<wire x1="-1.55" y1="-1.55" x2="1.55" y2="-1.55" width="0.127" layer="51"/>
+<wire x1="1.55" y1="-1.55" x2="1.55" y2="1.55" width="0.127" layer="51"/>
+<wire x1="1.55" y1="1.55" x2="-1.55" y2="1.55" width="0.127" layer="51"/>
+<circle x="-0.7" y="1" radius="0.2" width="0.254" layer="21"/>
+<wire x1="-1.2" y1="1.54" x2="1.2" y2="1.54" width="0.127" layer="21"/>
+<wire x1="1.2" y1="1.54" x2="1.2" y2="-1.54" width="0.127" layer="21"/>
+<wire x1="1.2" y1="-1.54" x2="-1.2" y2="-1.54" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="-1.54" x2="-1.2" y2="1.54" width="0.127" layer="21"/>
+<wire x1="-1.54" y1="1.57" x2="1.55" y2="1.57" width="0.127" layer="39"/>
+<wire x1="1.55" y1="1.57" x2="1.55" y2="-1.57" width="0.127" layer="39"/>
+<wire x1="1.55" y1="-1.57" x2="-1.55" y2="-1.57" width="0.127" layer="39"/>
+<wire x1="-1.55" y1="-1.57" x2="-1.55" y2="1.55" width="0.127" layer="39"/>
+<text x="-2.64" y="1.99" size="1.27" layer="25" font="vector">&gt;NAME</text>
+</package>
+<package name="SOIC-16_0.300">
+<description>Maxim pattern 16 SO W16#H2
+&lt;br&gt;
+&lt;a href=http://pdfserv.maximintegrated.com/land_patterns/90-0107.PDF&gt;http://pdfserv.maximintegrated.com/land_patterns/90-0107.PDF&lt;/a&gt;</description>
+<smd name="P$1" x="-4.685" y="4.445" dx="1.98" dy="0.53" layer="1"/>
+<smd name="P$2" x="-4.685" y="3.175" dx="1.98" dy="0.53" layer="1"/>
+<smd name="P$3" x="-4.685" y="1.905" dx="1.98" dy="0.53" layer="1"/>
+<smd name="P$4" x="-4.685" y="0.635" dx="1.98" dy="0.53" layer="1"/>
+<smd name="P$5" x="-4.685" y="-0.635" dx="1.98" dy="0.53" layer="1"/>
+<smd name="P$6" x="-4.685" y="-1.905" dx="1.98" dy="0.53" layer="1"/>
+<smd name="P$7" x="-4.685" y="-3.175" dx="1.98" dy="0.53" layer="1"/>
+<smd name="P$8" x="-4.685" y="-4.445" dx="1.98" dy="0.53" layer="1"/>
+<smd name="P$9" x="4.685" y="-4.445" dx="1.98" dy="0.53" layer="1"/>
+<smd name="P$10" x="4.685" y="-3.175" dx="1.98" dy="0.53" layer="1"/>
+<smd name="P$11" x="4.685" y="-1.905" dx="1.98" dy="0.53" layer="1"/>
+<smd name="P$12" x="4.685" y="-0.635" dx="1.98" dy="0.53" layer="1"/>
+<smd name="P$13" x="4.685" y="0.635" dx="1.98" dy="0.53" layer="1"/>
+<smd name="P$14" x="4.685" y="1.905" dx="1.98" dy="0.53" layer="1"/>
+<smd name="P$15" x="4.685" y="3.175" dx="1.98" dy="0.53" layer="1"/>
+<smd name="P$16" x="4.685" y="4.445" dx="1.98" dy="0.53" layer="1"/>
+<wire x1="-3.8" y1="5.25" x2="3.8" y2="5.25" width="0.127" layer="51"/>
+<wire x1="3.8" y1="5.25" x2="3.8" y2="-5.25" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-5.25" x2="-3.8" y2="-5.25" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-5.25" x2="-3.8" y2="5.25" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="5.25" x2="3.8" y2="5.25" width="0.127" layer="39"/>
+<wire x1="3.8" y1="5.25" x2="3.8" y2="-5.25" width="0.127" layer="39"/>
+<wire x1="3.8" y1="-5.25" x2="-3.8" y2="-5.25" width="0.127" layer="39"/>
+<wire x1="-3.8" y1="-5.25" x2="-3.8" y2="5.25" width="0.127" layer="39"/>
+<circle x="-2.5" y="4.5" radius="0.5" width="0.254" layer="21"/>
+<wire x1="-3.4" y1="5.1" x2="-3.4" y2="-5.1" width="0.127" layer="21"/>
+<wire x1="-3.4" y1="-5.1" x2="3.4" y2="-5.1" width="0.127" layer="21"/>
+<wire x1="3.4" y1="-5.1" x2="3.4" y2="5.1" width="0.127" layer="21"/>
+<wire x1="3.4" y1="5.1" x2="-3.4" y2="5.1" width="0.127" layer="21"/>
+<text x="1" y="-3" size="1.27" layer="25" font="vector" rot="R90">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MS5803">
@@ -7863,6 +7947,49 @@ GND1, GND2, GND3, GND4 are the connector case grounds.</description>
 <pin name="4" x="7.62" y="0" visible="pad" direction="pas" function="dot" rot="R180"/>
 <pin name="5" x="-10.16" y="-2.54" visible="pad" direction="pas" function="dot"/>
 <pin name="6" x="7.62" y="-2.54" visible="pad" direction="pas" function="dot" rot="R180"/>
+</symbol>
+<symbol name="DS1339_8USOP">
+<description>Maxim DS1339 real time clock&lt;br&gt;
+8-pin µSOP package&lt;br&gt;
+Available in 2.0V, 3.0V, 3.3V versions, check part numbers</description>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="X1" x="-15.24" y="5.08" length="middle"/>
+<pin name="X2" x="-15.24" y="2.54" length="middle"/>
+<pin name="VBACKUP" x="-15.24" y="0" length="middle"/>
+<pin name="GND" x="-15.24" y="-2.54" length="middle"/>
+<pin name="SDA" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="SCL" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="SQW/!INT" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="VCC" x="15.24" y="5.08" length="middle" rot="R180"/>
+<text x="-5.08" y="10.16" size="2.1844" layer="125" font="vector">&gt;NAME</text>
+</symbol>
+<symbol name="DS1339C_SOIC16">
+<description>Maxim DS1339C real time clock with integrated crystal&lt;br&gt;
+Available in 2.0V, 3.0V, 3.3V versions, check part number&lt;br&gt;</description>
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<pin name="SCL" x="-15.24" y="10.16" length="middle"/>
+<pin name="SQW/!INT" x="-15.24" y="7.62" length="middle"/>
+<pin name="VCC" x="-15.24" y="5.08" length="middle" direction="pwr"/>
+<pin name="NC4" x="-15.24" y="2.54" length="middle"/>
+<pin name="NC5" x="-15.24" y="0" length="middle"/>
+<pin name="NC6" x="-15.24" y="-2.54" length="middle"/>
+<pin name="NC7" x="-15.24" y="-5.08" length="middle"/>
+<pin name="NC8" x="-15.24" y="-7.62" length="middle"/>
+<pin name="NC9" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="NC10" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="NC11" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="NC12" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="NC13" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="VBACKUP" x="15.24" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="15.24" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="SDA" x="15.24" y="10.16" length="middle" rot="R180"/>
+<text x="-10.16" y="15.24" size="2.1844" layer="125" font="vector">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -9879,6 +10006,53 @@ Digikey PN WM24066CT-ND</description>
 <connect gate="G$1" pin="SCLK" pad="SCK5"/>
 <connect gate="G$1" pin="VDD" pad="VDD4"/>
 <connect gate="G$1" pin="VSS_GND" pad="GND6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PINHD-2X3">
+<description>&lt;b&gt;2x3 header 0.1" spacing&lt;/b&gt;&lt;br&gt;</description>
+<gates>
+<gate name="G$1" symbol="PINHD_2X3" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="2X3-NS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS1339U">
+<description>&lt;b&gt;Maxim DS1339U real time clock&lt;/b&gt;&lt;br&gt;
+µSOP 8-pin package&lt;br&gt;
+Available in 2.0V, 3.0V, 3.3V versions, check part number&lt;br&gt;
+This is a different version than DS1339C, which has an internal crystal and larger package</description>
+<gates>
+<gate name="G$1" symbol="DS1339_8USOP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="USOP-8">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$4"/>
+<connect gate="G$1" pin="SCL" pad="P$6"/>
+<connect gate="G$1" pin="SDA" pad="P$5"/>
+<connect gate="G$1" pin="SQW/!INT" pad="P$7"/>
+<connect gate="G$1" pin="VBACKUP" pad="P$3"/>
+<connect gate="G$1" pin="VCC" pad="P$8"/>
+<connect gate="G$1" pin="X1" pad="P$1"/>
+<connect gate="G$1" pin="X2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>

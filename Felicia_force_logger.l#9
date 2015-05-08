@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -5036,6 +5036,64 @@ Digikey PN: 811-2272-ND</description>
 <connect gate="G$1" pin="P$7_NC" pad="P$7_NC"/>
 <connect gate="G$1" pin="P$8_VOUT" pad="P$8_VOUT"/>
 <connect gate="G$1" pin="P$9_0V" pad="P$9_0V"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DUE_HALF_SHIELD_A7-ANALOG">
+<gates>
+<gate name="G$1" symbol="DUE_HALF_SHIELD_A7-ANALOG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DUE_HALF_SHIELD_A7-ANALOG">
+<connects>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="3V3" pad="3V3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="5V" pad="5V1"/>
+<connect gate="G$1" pin="5V_SPI" pad="5V_SPI"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="G$1" pin="A0" pad="A0"/>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="A2" pad="A2"/>
+<connect gate="G$1" pin="A3" pad="A3"/>
+<connect gate="G$1" pin="A4" pad="A4"/>
+<connect gate="G$1" pin="A5" pad="A5"/>
+<connect gate="G$1" pin="A6" pad="A6"/>
+<connect gate="G$1" pin="A7" pad="A7"/>
+<connect gate="G$1" pin="AREF" pad="AREF"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND_1" pad="GND_1"/>
+<connect gate="G$1" pin="GND_2" pad="GND_2"/>
+<connect gate="G$1" pin="GND_DEBUG" pad="GND_DEBUG"/>
+<connect gate="G$1" pin="GND_SPI" pad="GND_SPI"/>
+<connect gate="G$1" pin="IOREF" pad="IOREF1"/>
+<connect gate="G$1" pin="MISO_SPI" pad="MISO_SPI"/>
+<connect gate="G$1" pin="MOSI_SPI" pad="MOSI_SPI"/>
+<connect gate="G$1" pin="NC" pad="NC1"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
+<connect gate="G$1" pin="RESET_DEBUG" pad="RESET_DEBUG"/>
+<connect gate="G$1" pin="RESET_SPI" pad="RESET_SPI"/>
+<connect gate="G$1" pin="RX0" pad="RX0"/>
+<connect gate="G$1" pin="SCK_SPI" pad="SCK_SPI"/>
+<connect gate="G$1" pin="SCL1" pad="SCL1"/>
+<connect gate="G$1" pin="SDA1" pad="SDA1"/>
+<connect gate="G$1" pin="SWCLK_DEBUG" pad="SWCLK_DEBUG"/>
+<connect gate="G$1" pin="SWDIO_DEBUG" pad="SWDIO_DEBUG"/>
+<connect gate="G$1" pin="TX0" pad="TX0"/>
+<connect gate="G$1" pin="VIN" pad="VIN1"/>
 </connects>
 <technologies>
 <technology name=""/>

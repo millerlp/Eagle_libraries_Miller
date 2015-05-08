@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -6986,6 +6986,41 @@ with :import-pads-powerpcb-v5.ulp Version 1.0.1 at 04.10.2012 14:11:20</descript
 <wire x1="3.4" y1="5.1" x2="-3.4" y2="5.1" width="0.127" layer="21"/>
 <text x="1" y="-3" size="1.27" layer="25" font="vector" rot="R90">&gt;NAME</text>
 </package>
+<package name="SWITCH_SMD_RA_SPDT">
+<description>&lt;b&gt;Slide switch SPDT right angle &lt;/b&gt;&lt;br&gt;
+Based on Copal PN CSS-1210B (or 1210TB)</description>
+<smd name="P$1" x="-3" y="3.75" dx="1.27" dy="0.635" layer="1" rot="R270"/>
+<smd name="P$2" x="-1" y="3.75" dx="1.27" dy="0.635" layer="1" rot="R270"/>
+<smd name="P$3_COMMON" x="1" y="3.75" dx="1.27" dy="0.635" layer="1" rot="R270"/>
+<hole x="-3.15" y="0.1" drill="0.9"/>
+<hole x="3.15" y="0.1" drill="0.9"/>
+<wire x1="-4.25" y1="0" x2="-1.75" y2="0" width="0.127" layer="51"/>
+<wire x1="-1.75" y1="0" x2="1.75" y2="0" width="0.127" layer="51"/>
+<wire x1="1.75" y1="0" x2="4.25" y2="0" width="0.127" layer="51"/>
+<wire x1="4.25" y1="0" x2="4.25" y2="3" width="0.127" layer="51"/>
+<wire x1="4.25" y1="3" x2="-4.25" y2="3" width="0.127" layer="51"/>
+<wire x1="-4.25" y1="3" x2="-4.25" y2="0" width="0.127" layer="51"/>
+<text x="-3.41" y="1.45" size="1.27" layer="51" font="vector">1</text>
+<text x="-1.39" y="1.48" size="1.27" layer="51" font="vector">2</text>
+<text x="0.5" y="1.5" size="1.27" layer="51" font="vector">C</text>
+<wire x1="-1.75" y1="0" x2="-1.75" y2="-2" width="0.127" layer="51"/>
+<wire x1="-1.75" y1="-2" x2="1.75" y2="-2" width="0.127" layer="51"/>
+<wire x1="1.75" y1="-2" x2="1.75" y2="0" width="0.127" layer="51"/>
+<text x="-4" y="4.5" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<wire x1="-4.15" y1="3" x2="-4.15" y2="0" width="0.127" layer="21"/>
+<wire x1="-4.15" y1="0" x2="4.15" y2="0" width="0.127" layer="21"/>
+<wire x1="4.15" y1="0" x2="4.15" y2="3" width="0.127" layer="21"/>
+<wire x1="4.15" y1="3" x2="-4.15" y2="3" width="0.127" layer="21"/>
+<wire x1="-4.3" y1="3" x2="4.25" y2="3" width="0.127" layer="39"/>
+<wire x1="4.25" y1="3" x2="4.25" y2="0" width="0.127" layer="39"/>
+<wire x1="4.25" y1="0" x2="2" y2="0" width="0.127" layer="39"/>
+<wire x1="-4.25" y1="0" x2="-4.25" y2="3.05" width="0.127" layer="39"/>
+<wire x1="-4.25" y1="0" x2="-2" y2="0" width="0.127" layer="39"/>
+<wire x1="-2" y1="0" x2="2" y2="0" width="0.127" layer="39"/>
+<wire x1="2" y1="0" x2="2" y2="-2" width="0.127" layer="39"/>
+<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="39"/>
+<wire x1="-2" y1="-2" x2="-2" y2="0" width="0.127" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MS5803">
@@ -7990,6 +8025,16 @@ Available in 2.0V, 3.0V, 3.3V versions, check part number&lt;br&gt;</description
 <pin name="GND" x="15.24" y="7.62" length="middle" direction="pwr" rot="R180"/>
 <pin name="SDA" x="15.24" y="10.16" length="middle" rot="R180"/>
 <text x="-10.16" y="15.24" size="2.1844" layer="125" font="vector">&gt;NAME</text>
+</symbol>
+<symbol name="SWITCH_SPDT">
+<description>&lt;b&gt;Single Pole, Dual Throw switch&lt;/b&gt;</description>
+<pin name="P$1" x="7.62" y="5.08" length="middle" rot="R180"/>
+<pin name="P$2" x="7.62" y="-5.08" length="middle" rot="R180"/>
+<pin name="P$3" x="-5.08" y="0" length="middle"/>
+<circle x="0" y="0" radius="0.803215625" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="0.254" x2="3.302" y2="3.556" width="0.254" layer="94"/>
+<text x="-2.54" y="7.62" size="1.6764" layer="125" font="vector">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -10054,6 +10099,51 @@ This is a different version than DS1339C, which has an internal crystal and larg
 <connect gate="G$1" pin="X1" pad="P$1"/>
 <connect gate="G$1" pin="X2" pad="P$2"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS1339C_SOIC16">
+<description>&lt;b&gt;Maxim DS1339C real time clock with internal crystal&lt;br&gt;&lt;/b&gt;
+SOIC-16 narrow package (300 mils)
+&lt;br&gt;Available in 2.0V, 3.0V, 3.3V versions, check part number</description>
+<gates>
+<gate name="G$1" symbol="DS1339C_SOIC16" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC-16_0.300">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$15"/>
+<connect gate="G$1" pin="NC10" pad="P$10"/>
+<connect gate="G$1" pin="NC11" pad="P$11"/>
+<connect gate="G$1" pin="NC12" pad="P$12"/>
+<connect gate="G$1" pin="NC13" pad="P$13"/>
+<connect gate="G$1" pin="NC4" pad="P$4"/>
+<connect gate="G$1" pin="NC5" pad="P$5"/>
+<connect gate="G$1" pin="NC6" pad="P$6"/>
+<connect gate="G$1" pin="NC7" pad="P$7"/>
+<connect gate="G$1" pin="NC8" pad="P$8"/>
+<connect gate="G$1" pin="NC9" pad="P$9"/>
+<connect gate="G$1" pin="SCL" pad="P$1"/>
+<connect gate="G$1" pin="SDA" pad="P$16"/>
+<connect gate="G$1" pin="SQW/!INT" pad="P$2"/>
+<connect gate="G$1" pin="VBACKUP" pad="P$14"/>
+<connect gate="G$1" pin="VCC" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SWITCH_SLIDE_SMD_SPDT">
+<gates>
+<gate name="G$1" symbol="SWITCH_SPDT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SWITCH_SMD_RA_SPDT">
 <technologies>
 <technology name=""/>
 </technologies>

@@ -5146,6 +5146,19 @@ Matches Uno R3 footprint, but adds Due SPI 2x3 header, debug wire 4-pin header, 
 </device>
 </devices>
 </deviceset>
+<deviceset name="DGND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DGND" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

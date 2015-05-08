@@ -5044,6 +5044,9 @@ Digikey PN: 811-2272-ND</description>
 </devices>
 </deviceset>
 <deviceset name="DUE_HALF_SHIELD_A7-ANALOG">
+<description>&lt;b&gt;Arduino Due shield&lt;/b&gt;&lt;br&gt;
+Matches Uno R3 footprint, but adds Due SPI 2x3 header, debug wire 4-pin header, and adds Analog pins A6 and A7.&lt;br&gt;
+&lt;b&gt;**NOTE**&lt;/b&gt;The 5V pin on the Due SPI 2x3 header outputs &lt;b&gt;5V&lt;/b&gt;, rather than the 3V3 you might expect.</description>
 <gates>
 <gate name="G$1" symbol="DUE_HALF_SHIELD_A7-ANALOG" x="0" y="0"/>
 </gates>
