@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2970,6 +2970,42 @@ Matches Uno R3 footprint, but adds Due SPI 2x3 header, debug wire 4-pin header, 
 <wire x1="57.785" y1="1.27" x2="56.515" y2="1.27" width="0.127" layer="21"/>
 <wire x1="60.325" y1="1.27" x2="59.055" y2="1.27" width="0.127" layer="21"/>
 </package>
+<package name="POWER_JACK_PTH">
+<description>Larger holes for wide pins. &lt;br&gt;
+Should work with Digikey PN CP-202AH-ND</description>
+<wire x1="4.5" y1="13.7" x2="2.4" y2="13.7" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="3" x2="-4.5" y2="0.1" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="0.1" x2="4.5" y2="3" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="0.1" x2="-4.5" y2="0.1" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="3" x2="4.5" y2="8.3" width="0.2032" layer="21"/>
+<wire x1="4.5" y1="13.7" x2="4.5" y2="13" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="3" x2="-4.5" y2="13.7" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="13.7" x2="-2.4" y2="13.7" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="3" x2="4.5" y2="3" width="0.2032" layer="21"/>
+<pad name="PWR" x="0" y="13.7" drill="2.9972"/>
+<pad name="GND" x="0" y="7.7" drill="2.9972"/>
+<pad name="GNDBREAK" x="4.7" y="10.7" drill="2.9972" rot="R90"/>
+<text x="-5.08" y="0" size="1.778" layer="25" rot="R90">&gt;NAME</text>
+<text x="-5.08" y="8.89" size="1.778" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+<package name="POWER_JACK_PTH_SMALLHOLE">
+<description>Power Jack through-hole&lt;br&gt;
+Sized for small-pin jacks, 1mm pin width</description>
+<wire x1="4.5" y1="13.7" x2="2.4" y2="13.7" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="3" x2="-4.5" y2="0.1" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="0.1" x2="4.5" y2="3" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="0.1" x2="-4.5" y2="0.1" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="3" x2="4.5" y2="8.3" width="0.2032" layer="21"/>
+<wire x1="4.5" y1="13.7" x2="4.5" y2="13" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="3" x2="-4.5" y2="13.7" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="13.7" x2="-2.4" y2="13.7" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="3" x2="4.5" y2="3" width="0.2032" layer="21"/>
+<pad name="PWR" x="0" y="13.716" drill="1.4"/>
+<pad name="GND" x="0" y="7.62" drill="1.4"/>
+<pad name="GNDBREAK" x="4.7" y="10.7" drill="1.4" rot="R90"/>
+<text x="-5.08" y="0" size="1.778" layer="25" rot="R90">&gt;NAME</text>
+<text x="-5.08" y="8.89" size="1.778" layer="27" rot="R90">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TRANSFLASH">
@@ -3739,6 +3775,48 @@ Half Shield</text>
 <pin name="A7" x="-17.78" y="-17.78" visible="off" length="short" swaplevel="1"/>
 <text x="-12.7" y="-15.24" size="1.27" layer="94" font="vector">A6</text>
 <text x="-12.7" y="-17.78" size="1.27" layer="94" font="vector">A7</text>
+</symbol>
+<symbol name="DOCFIELD_REVA">
+<wire x1="0" y1="0" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.1016" layer="94"/>
+<text x="1.27" y="1.27" size="2.54" layer="94">Date:</text>
+<text x="12.7" y="1.27" size="2.54" layer="94">&gt;LAST_DATE_TIME</text>
+<text x="72.39" y="1.27" size="2.54" layer="94">Sheet:</text>
+<text x="86.36" y="1.27" size="2.54" layer="94">&gt;SHEET</text>
+<text x="88.9" y="11.43" size="2.54" layer="94">REV: A</text>
+<text x="1.27" y="19.05" size="2.54" layer="94">TITLE:</text>
+<text x="1.27" y="11.43" size="2.54" layer="94">Document Number:</text>
+<text x="17.78" y="19.05" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+<text x="2.54" y="30.48" size="2.54" layer="94">Felicia King</text>
+</symbol>
+<symbol name="VNEG">
+<wire x1="0.762" y1="1.27" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VNEG" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="AGND">
+<description>Analog Ground symbol</description>
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5044,6 +5122,9 @@ Digikey PN: 811-2272-ND</description>
 </devices>
 </deviceset>
 <deviceset name="DUE_HALF_SHIELD_A7-ANALOG">
+<description>&lt;b&gt;Arduino Due shield&lt;/b&gt;&lt;br&gt;
+Matches Uno R3 footprint, but adds Due SPI 2x3 header, debug wire 4-pin header, and adds Analog pins A6 and A7.&lt;br&gt;
+&lt;b&gt;**NOTE**&lt;/b&gt;The 5V pin on the Due SPI 2x3 header outputs &lt;b&gt;5V&lt;/b&gt;, rather than the 3V3 you might expect.</description>
 <gates>
 <gate name="G$1" symbol="DUE_HALF_SHIELD_A7-ANALOG" x="0" y="0"/>
 </gates>
@@ -5095,6 +5176,58 @@ Digikey PN: 811-2272-ND</description>
 <connect gate="G$1" pin="TX0" pad="TX0"/>
 <connect gate="G$1" pin="VIN" pad="VIN1"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DOCFIELD_REVA">
+<gates>
+<gate name="G$1" symbol="DOCFIELD_REVA" x="-55.88" y="-17.78"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DGND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DGND" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VNEG" prefix="SUPPLY">
+<description>&lt;b&gt;VNEG&lt;/b&gt;&lt;br&gt;
+Generic negative voltage terminal.</description>
+<gates>
+<gate name="G$2" symbol="VNEG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AGND">
+<description>Analog Ground symbol</description>
+<gates>
+<gate name="G$1" symbol="AGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
