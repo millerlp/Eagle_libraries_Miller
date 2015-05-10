@@ -7093,8 +7093,8 @@ This size is non-interlocking</description>
 <wire x1="4.0132" y1="3.2258" x2="4.0132" y2="-3.2258" width="0.127" layer="21"/>
 <wire x1="4.0132" y1="-3.2258" x2="-4.0132" y2="-3.2258" width="0.127" layer="21"/>
 <wire x1="-4.0132" y1="-3.2258" x2="-4.0132" y2="3.2258" width="0.127" layer="21"/>
-<text x="-3.175" y="-2.54" size="0.8128" layer="51">1</text>
-<text x="0" y="-2.54" size="0.8128" layer="51">2</text>
+<text x="-3.175" y="-2.54" size="0.8128" layer="51" font="vector">1</text>
+<text x="0" y="-2.54" size="0.8128" layer="51" font="vector">2</text>
 <wire x1="-4.0132" y1="3.2258" x2="4.0132" y2="3.2258" width="0.127" layer="39"/>
 <wire x1="4.0132" y1="3.2258" x2="4.0132" y2="-3.2258" width="0.127" layer="39"/>
 <wire x1="4.0132" y1="-3.2258" x2="-4.0132" y2="-3.2258" width="0.127" layer="39"/>
@@ -7104,6 +7104,7 @@ This size is non-interlocking</description>
 <wire x1="4.0132" y1="-3.2258" x2="-4.0132" y2="-3.2258" width="0.127" layer="51"/>
 <wire x1="-4.0132" y1="-3.2258" x2="-4.0132" y2="3.2258" width="0.127" layer="51"/>
 <pad name="P$3" x="2.54" y="0" drill="1.3" diameter="1.778" shape="long" rot="R90"/>
+<text x="2.54" y="-2.54" size="0.8128" layer="51" font="vector">3</text>
 </package>
 </packages>
 <symbols>
@@ -10433,6 +10434,18 @@ Digikey PN ED10561-ND</description>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TERMINAL-3PIN-2.54MM">
+<gates>
+<gate name="G$1" symbol="TERMINAL-3PIN-5.08MM" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>

@@ -7063,7 +7063,8 @@ Digikey PN 887-1263-1-ND (8MHz model, 18pF)</description>
 <package name="TERMINAL-2PIN-2.54MM">
 <description>&lt;b&gt;Terminal block 0.1" spacing &lt;/b&gt;&lt;br&gt;
 Example: On Shore Technology PN OSTVN02A150 &lt;br&gt;
-Digikey PN ED10561-ND</description>
+Digikey PN ED10561-ND&lt;br&gt;
+This size is non-interlocking.</description>
 <pad name="P$1" x="-1.27" y="0" drill="1.3" diameter="1.778" shape="long" rot="R90"/>
 <pad name="P$2" x="1.27" y="0" drill="1.3" diameter="1.778" shape="long" rot="R90"/>
 <wire x1="-2.7432" y1="3.2258" x2="2.7432" y2="3.2258" width="0.127" layer="21"/>

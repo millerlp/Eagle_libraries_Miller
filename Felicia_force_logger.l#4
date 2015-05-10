@@ -311,12 +311,17 @@ chip</description>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
 <package name="0805">
+<description>Capacitor, 0805</description>
 <wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
 <wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
 <smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
 <smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
 <text x="-2.6" y="1" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.2" y="-2.2" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1.524" y1="0.889" x2="1.524" y2="0.889" width="0.127" layer="39"/>
+<wire x1="1.524" y1="0.889" x2="1.524" y2="-0.889" width="0.127" layer="39"/>
+<wire x1="1.524" y1="-0.889" x2="-1.524" y2="-0.889" width="0.127" layer="39"/>
+<wire x1="-1.524" y1="-0.889" x2="-1.524" y2="0.889" width="0.127" layer="39"/>
 </package>
 <package name="LED5MM">
 <description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;

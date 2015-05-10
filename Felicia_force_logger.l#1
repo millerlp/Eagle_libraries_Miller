@@ -127,6 +127,12 @@
 <library>
 <packages>
 <package name="MICROSD">
+<description>&lt;b&gt;Micro-SD / Transflash card holder with SPI pinout&lt;/b&gt;
+&lt;p&gt;
+For the 3M # 2908-05WB-MG and/or 4UCON #19656&lt;br&gt;
+push-push type (spring-loaded)
+&lt;p&gt;
+Digikey PN 3M5607CT-ND</description>
 <wire x1="13" y1="-15.14" x2="14" y2="-15.14" width="0.127" layer="21"/>
 <wire x1="14" y1="-15.14" x2="14" y2="-0.04" width="0.127" layer="21"/>
 <wire x1="14" y1="-0.04" x2="0" y2="-0.04" width="0.127" layer="21"/>
@@ -265,6 +271,7 @@ wide body 7.5 mm/JEDEC MS-013AA</description>
 <wire x1="5.08" y1="-3.175" x2="-5.08" y2="-3.175" width="0.2032" layer="21"/>
 </package>
 <package name="0603">
+<description>Capacitor, 0805</description>
 <wire x1="-1.4986" y1="0.6604" x2="1.4986" y2="0.6604" width="0.0508" layer="39"/>
 <wire x1="1.4986" y1="0.6604" x2="1.4986" y2="-0.6604" width="0.0508" layer="39"/>
 <wire x1="1.4986" y1="-0.6604" x2="-1.4986" y2="-0.6604" width="0.0508" layer="39"/>
