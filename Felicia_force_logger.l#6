@@ -317,6 +317,10 @@ chip</description>
 <smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
 <text x="-2.6" y="1" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.2" y="-2.2" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1.524" y1="0.889" x2="1.524" y2="0.889" width="0.127" layer="39"/>
+<wire x1="1.524" y1="0.889" x2="1.524" y2="-0.889" width="0.127" layer="39"/>
+<wire x1="1.524" y1="-0.889" x2="-1.524" y2="-0.889" width="0.127" layer="39"/>
+<wire x1="-1.524" y1="-0.889" x2="-1.524" y2="0.889" width="0.127" layer="39"/>
 </package>
 <package name="LED5MM">
 <description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
