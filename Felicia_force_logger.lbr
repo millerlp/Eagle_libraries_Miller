@@ -2507,8 +2507,8 @@ Digikey PN: 811-2272-ND</description>
 <pad name="P$7_NC" x="7.62" y="-3.81" drill="0.7"/>
 <pad name="P$9_0V" x="5.08" y="3.81" drill="0.7"/>
 <pad name="P$10_-VOUT" x="2.54" y="3.81" drill="0.7"/>
-<text x="-10.16" y="5.08" size="1.27" layer="25">&gt;NAME</text>
-<text x="-8.89" y="-1.27" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-10.16" y="5.08" size="1.016" layer="25" font="vector" ratio="14">&gt;NAME</text>
+<text x="-8.89" y="-1.27" size="1.016" layer="27" font="vector" ratio="14">&gt;VALUE</text>
 <text x="-6.35" y="-4.445" size="1.27" layer="21" font="vector" ratio="10">-Vin</text>
 <text x="3.175" y="-2.54" size="1.27" layer="21" font="vector" ratio="10" rot="R90">-Vout</text>
 <text x="5.715" y="0.635" size="1.27" layer="21" font="vector" ratio="10" rot="R90">0V</text>
@@ -2523,6 +2523,10 @@ Digikey PN: 811-2272-ND</description>
 <wire x1="-9.8552" y1="-5.0038" x2="9.8552" y2="-5.0038" width="0.127" layer="51"/>
 <wire x1="9.8552" y1="-5.0038" x2="9.8552" y2="5.0038" width="0.127" layer="51"/>
 <wire x1="9.8552" y1="5.0038" x2="-9.8552" y2="5.0038" width="0.127" layer="51"/>
+<wire x1="-9.8552" y1="5.0038" x2="9.8552" y2="5.0038" width="0.127" layer="21"/>
+<wire x1="9.8552" y1="5.0038" x2="9.8552" y2="-5.0038" width="0.127" layer="21"/>
+<wire x1="9.8552" y1="-5.0038" x2="-9.8552" y2="-5.0038" width="0.127" layer="21"/>
+<wire x1="-9.8552" y1="-5.0038" x2="-9.8552" y2="5.0038" width="0.127" layer="21"/>
 </package>
 <package name="DUE_HALF_SHIELD_A7-ANALOG">
 <description>&lt;b&gt;Arduino Due shield&lt;/b&gt;&lt;br&gt;
