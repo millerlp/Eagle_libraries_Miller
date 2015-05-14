@@ -9174,6 +9174,9 @@ Cut the traces with a razor to isolate pins.</description>
 <text x="0" y="-5.08" size="1.778" layer="97">2</text>
 </symbol>
 <symbol name="DUE_HALF_SHIELD_A7-ANALOG">
+<description>&lt;b&gt;Arduino Due "half-shield"&lt;/b&gt;&lt;br&gt;
+This shield covers the traditional Arduino Uno footprint, but adds the extra ports available on the Due (DebugWire port and SPI port) along with Analog pins A6 and A7. 
+&lt;br&gt;&lt;b&gt;**NOTE**&lt;/b&gt; The 5V pin on the SPI header outputs &lt;b&gt;5V&lt;/b&gt; even though the Due is a 3.3V platform.</description>
 <wire x1="-15.24" y1="30.48" x2="15.24" y2="30.48" width="0.254" layer="94"/>
 <wire x1="15.24" y1="30.48" x2="15.24" y2="-25.4" width="0.254" layer="94"/>
 <wire x1="15.24" y1="-25.4" x2="-15.24" y2="-25.4" width="0.254" layer="94"/>

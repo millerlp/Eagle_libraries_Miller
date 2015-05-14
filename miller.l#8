@@ -6420,7 +6420,7 @@ Digikey PN 3386P-104LF-ND for example</description>
 <wire x1="-4.7625" y1="-4.7625" x2="-3.81" y2="-4.7625" width="0.127" layer="21"/>
 <wire x1="3.81" y1="-4.7625" x2="4.7625" y2="-4.7625" width="0.127" layer="21"/>
 <circle x="0" y="0.8763" radius="1.5748" width="0.127" layer="51"/>
-<pad name="P$1" x="-2.54" y="0" drill="0.7"/>
+<pad name="P$1" x="-2.54" y="0" drill="0.7" diameter="1.27"/>
 <pad name="P$3" x="2.54" y="0" drill="0.7"/>
 <pad name="P$2-WIPER" x="0" y="-2.54" drill="0.7"/>
 <text x="-5.08" y="5.08" size="1.27" layer="25">&gt;NAME</text>
@@ -7482,9 +7482,9 @@ Example: TT Elec PN 67WR100KLF,  Digikey PN 987-1086-ND&lt;br&gt;
 <description>TT Electronics series 67Y trimmer potentiometer&lt;br&gt;
 Example: TT Elec PN 67YR100KLF,  Digikey PN 987-1501-ND&lt;br&gt;
 0.1" pin spacing</description>
-<pad name="P$1" x="-2.54" y="1.27" drill="0.6"/>
-<pad name="P$2" x="0" y="-1.27" drill="0.6"/>
-<pad name="P$3" x="2.54" y="1.27" drill="0.6"/>
+<pad name="P$1" x="-2.54" y="1.27" drill="0.6" diameter="1.27"/>
+<pad name="P$2" x="0" y="-1.27" drill="0.6" diameter="1.27"/>
+<pad name="P$3" x="2.54" y="1.27" drill="0.6" diameter="1.27"/>
 <wire x1="-4.7625" y1="2.4765" x2="4.7625" y2="2.4765" width="0.127" layer="51"/>
 <wire x1="4.7625" y1="2.4765" x2="4.7625" y2="-2.4765" width="0.127" layer="51"/>
 <wire x1="4.7625" y1="-2.4765" x2="-4.7625" y2="-2.4765" width="0.127" layer="51"/>
@@ -7501,6 +7501,9 @@ Example: TT Elec PN 67YR100KLF,  Digikey PN 987-1501-ND&lt;br&gt;
 <text x="-5.08" y="-3.683" size="0.8128" layer="27" font="vector" ratio="14">&gt;VALUE</text>
 <circle x="-3.937" y="1.651" radius="0.635" width="0.127" layer="21"/>
 <wire x1="-3.937" y1="1.016" x2="-3.937" y2="2.286" width="0.127" layer="21"/>
+<text x="-3.175" y="0" size="0.6096" layer="51">1</text>
+<text x="1.905" y="0" size="0.6096" layer="51">3</text>
+<text x="-0.635" y="0" size="0.6096" layer="51">2</text>
 </package>
 </packages>
 <symbols>
