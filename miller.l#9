@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -7450,6 +7450,55 @@ Small pads. Cut trace with razor if needed.</description>
 <text x="-0.9525" y="0.635" size="0.4064" layer="25" font="vector" ratio="12">&gt;NAME</text>
 <text x="-0.9525" y="-1.016" size="0.4064" layer="27" font="vector" ratio="12">&gt;VALUE</text>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="29"/>
+</package>
+<package name="R-TRIMMER_67W_TT_ELEC">
+<description>TT Electronics series 67W trimmer potentiometer&lt;br&gt;
+Example: TT Elec PN 67WR100KLF,  Digikey PN 987-1086-ND&lt;br&gt;
+0.1" pin spacing</description>
+<pad name="P$1" x="-2.54" y="0" drill="0.54101875"/>
+<pad name="P$2" x="0" y="0" drill="0.54101875"/>
+<pad name="P$3" x="2.54" y="0" drill="0.54101875"/>
+<wire x1="-4.7625" y1="2.4765" x2="4.7625" y2="2.4765" width="0.127" layer="51"/>
+<wire x1="4.7625" y1="2.4765" x2="4.7625" y2="-2.4765" width="0.127" layer="51"/>
+<wire x1="4.7625" y1="-2.4765" x2="-4.7625" y2="-2.4765" width="0.127" layer="51"/>
+<wire x1="-4.7625" y1="-2.4765" x2="-4.7625" y2="2.4765" width="0.127" layer="51"/>
+<wire x1="-4.7625" y1="2.4765" x2="4.7625" y2="2.4765" width="0.127" layer="21"/>
+<wire x1="4.7625" y1="2.4765" x2="4.7625" y2="-2.4765" width="0.127" layer="21"/>
+<wire x1="4.7625" y1="-2.4765" x2="-4.7625" y2="-2.4765" width="0.127" layer="21"/>
+<wire x1="-4.7625" y1="-2.4765" x2="-4.7625" y2="2.4765" width="0.127" layer="21"/>
+<wire x1="-4.953" y1="2.54" x2="4.953" y2="2.54" width="0.127" layer="39"/>
+<wire x1="4.953" y1="2.54" x2="4.953" y2="-2.54" width="0.127" layer="39"/>
+<wire x1="4.953" y1="-2.54" x2="-4.953" y2="-2.54" width="0.127" layer="39"/>
+<wire x1="-4.953" y1="-2.54" x2="-4.953" y2="2.54" width="0.127" layer="39"/>
+<circle x="-3.81" y="1.524" radius="0.5388125" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="1.016" x2="-3.81" y2="2.032" width="0.127" layer="21"/>
+<text x="-2.667" y="1.143" size="0.4064" layer="51" font="vector" ratio="14">1</text>
+<text x="-0.127" y="1.143" size="0.4064" layer="51" font="vector" ratio="14">2</text>
+<text x="2.413" y="1.143" size="0.4064" layer="51" font="vector" ratio="14">3</text>
+</package>
+<package name="R-TRIMMER-67Y_TT_ELEC">
+<description>TT Electronics series 67Y trimmer potentiometer&lt;br&gt;
+Example: TT Elec PN 67YR100KLF,  Digikey PN 987-1501-ND&lt;br&gt;
+0.1" pin spacing</description>
+<pad name="P$1" x="-2.54" y="1.27" drill="0.6"/>
+<pad name="P$2" x="0" y="-1.27" drill="0.6"/>
+<pad name="P$3" x="2.54" y="1.27" drill="0.6"/>
+<wire x1="-4.7625" y1="2.4765" x2="4.7625" y2="2.4765" width="0.127" layer="51"/>
+<wire x1="4.7625" y1="2.4765" x2="4.7625" y2="-2.4765" width="0.127" layer="51"/>
+<wire x1="4.7625" y1="-2.4765" x2="-4.7625" y2="-2.4765" width="0.127" layer="51"/>
+<wire x1="-4.7625" y1="-2.4765" x2="-4.7625" y2="2.4765" width="0.127" layer="51"/>
+<wire x1="-4.7625" y1="2.4765" x2="4.7625" y2="2.4765" width="0.127" layer="21"/>
+<wire x1="4.7625" y1="2.4765" x2="4.7625" y2="-2.4765" width="0.127" layer="21"/>
+<wire x1="4.7625" y1="-2.4765" x2="-4.7625" y2="-2.4765" width="0.127" layer="21"/>
+<wire x1="-4.7625" y1="-2.4765" x2="-4.7625" y2="2.4765" width="0.127" layer="21"/>
+<wire x1="-4.953" y1="2.54" x2="4.953" y2="2.54" width="0.127" layer="39"/>
+<wire x1="4.953" y1="2.54" x2="4.953" y2="-2.54" width="0.127" layer="39"/>
+<wire x1="4.953" y1="-2.54" x2="-4.953" y2="-2.54" width="0.127" layer="39"/>
+<wire x1="-4.953" y1="-2.54" x2="-4.953" y2="2.54" width="0.127" layer="39"/>
+<text x="-5.08" y="2.667" size="0.8128" layer="25" font="vector" ratio="14">&gt;NAME</text>
+<text x="-5.08" y="-3.683" size="0.8128" layer="27" font="vector" ratio="14">&gt;VALUE</text>
+<circle x="-3.937" y="1.651" radius="0.635" width="0.127" layer="27"/>
+<wire x1="-3.937" y1="1.016" x2="-3.937" y2="2.286" width="0.127" layer="27"/>
 </package>
 </packages>
 <symbols>

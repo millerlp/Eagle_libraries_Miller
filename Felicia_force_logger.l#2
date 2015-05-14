@@ -24,23 +24,23 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -75,6 +75,7 @@
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -118,6 +119,9 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="no" active="no"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
@@ -133,20 +137,17 @@ For the 3M # 2908-05WB-MG and/or 4UCON #19656&lt;br&gt;
 push-push type (spring-loaded)
 &lt;p&gt;
 Digikey PN 3M5607CT-ND</description>
-<wire x1="13" y1="-15.14" x2="14" y2="-15.14" width="0.127" layer="21"/>
-<wire x1="14" y1="-15.14" x2="14" y2="-0.04" width="0.127" layer="21"/>
-<wire x1="14" y1="-0.04" x2="0" y2="-0.04" width="0.127" layer="21"/>
-<wire x1="0" y1="-0.04" x2="0" y2="-14.44" width="0.127" layer="21"/>
-<wire x1="0" y1="-14.44" x2="1" y2="-14.44" width="0.127" layer="21"/>
+<wire x1="14" y1="-12.6" x2="14" y2="-0.04" width="0.127" layer="21"/>
+<wire x1="0" y1="-0.04" x2="0" y2="-11.9" width="0.127" layer="21"/>
 <wire x1="1" y1="-14.44" x2="1.7" y2="-13.54" width="0.127" layer="21" curve="-90"/>
 <wire x1="1.7" y1="-13.54" x2="11.4" y2="-13.54" width="0.127" layer="21"/>
 <wire x1="11.4" y1="-13.54" x2="13" y2="-15.14" width="0.127" layer="21" curve="-90"/>
-<wire x1="0.4" y1="-14.7" x2="1.6" y2="-15.9" width="0.127" layer="21" curve="90"/>
-<wire x1="1.6" y1="-15.9" x2="10.8" y2="-15.9" width="0.127" layer="21"/>
-<wire x1="10.8" y1="-15.9" x2="12.1" y2="-14.8" width="0.127" layer="21" curve="90"/>
-<wire x1="0.4" y1="-15.6" x2="1.6" y2="-16.8" width="0.127" layer="21" curve="90"/>
-<wire x1="1.6" y1="-16.8" x2="10.8" y2="-16.8" width="0.127" layer="21"/>
-<wire x1="10.8" y1="-16.8" x2="12.1" y2="-15.7" width="0.127" layer="21" curve="90"/>
+<wire x1="0.4" y1="-14.7" x2="1.6" y2="-15.9" width="0.127" layer="51" curve="90"/>
+<wire x1="1.6" y1="-15.9" x2="10.8" y2="-15.9" width="0.127" layer="51"/>
+<wire x1="10.8" y1="-15.9" x2="12.1" y2="-14.8" width="0.127" layer="51" curve="90"/>
+<wire x1="0.4" y1="-15.6" x2="1.6" y2="-16.8" width="0.127" layer="51" curve="90"/>
+<wire x1="1.6" y1="-16.8" x2="10.8" y2="-16.8" width="0.127" layer="51"/>
+<wire x1="10.8" y1="-16.8" x2="12.1" y2="-15.7" width="0.127" layer="51" curve="90"/>
 <smd name="MT1" x="0.4" y="-13.54" dx="1.4" dy="1.9" layer="1"/>
 <smd name="MT2" x="13.6" y="-14.44" dx="1.4" dy="1.9" layer="1"/>
 <smd name="CD1" x="2" y="-0.44" dx="1.4" dy="1.8" layer="1" rot="R90"/>
@@ -160,6 +161,13 @@ Digikey PN 3M5607CT-ND</description>
 <smd name="2" x="7.9" y="-10.24" dx="0.7" dy="1.5" layer="1"/>
 <smd name="1" x="9" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
 <text x="3.7" y="-3.94" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="0" y1="0" x2="0.635" y2="0" width="0.127" layer="21"/>
+<wire x1="13.97" y1="0" x2="9.525" y2="0" width="0.127" layer="21"/>
+<wire x1="3.175" y1="0" x2="6.35" y2="0" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-12.446" x2="-0.254" y2="-12.446" width="0.127" layer="41"/>
+<wire x1="-0.254" y1="-12.446" x2="-0.254" y2="0.3048" width="0.127" layer="41"/>
+<wire x1="-0.254" y1="0.3048" x2="0.635" y2="0.3048" width="0.127" layer="41"/>
+<wire x1="0.635" y1="0.3048" x2="0.635" y2="-12.446" width="0.127" layer="41"/>
 </package>
 <package name="CR1220_BATTERY_HOLDER">
 <description>CR1220 battery holder</description>
@@ -3073,6 +3081,60 @@ Based on Copal PN CSS-1210B (or 1210TB)</description>
 <wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="39"/>
 <wire x1="-2" y1="-2" x2="-2" y2="0" width="0.127" layer="39"/>
 </package>
+<package name="R-TRIMMER_67W_TT_ELEC">
+<description>TT Electronics series 67W trimmer potentiometer&lt;br&gt;
+Example: TT Elec PN 67WR100KLF,  Digikey PN 987-1086-ND&lt;br&gt;
+0.1" pin spacing</description>
+<pad name="P$1" x="-2.54" y="0" drill="0.54101875" diameter="1.27"/>
+<pad name="P$2" x="0" y="0" drill="0.54101875" diameter="1.27"/>
+<pad name="P$3" x="2.54" y="0" drill="0.54101875" diameter="1.27"/>
+<wire x1="-4.7625" y1="2.4765" x2="4.7625" y2="2.4765" width="0.127" layer="51"/>
+<wire x1="4.7625" y1="2.4765" x2="4.7625" y2="-2.4765" width="0.127" layer="51"/>
+<wire x1="4.7625" y1="-2.4765" x2="-4.7625" y2="-2.4765" width="0.127" layer="51"/>
+<wire x1="-4.7625" y1="-2.4765" x2="-4.7625" y2="2.4765" width="0.127" layer="51"/>
+<wire x1="-4.7625" y1="2.4765" x2="4.7625" y2="2.4765" width="0.127" layer="21"/>
+<wire x1="4.7625" y1="2.4765" x2="4.7625" y2="-2.4765" width="0.127" layer="21"/>
+<wire x1="4.7625" y1="-2.4765" x2="-4.7625" y2="-2.4765" width="0.127" layer="21"/>
+<wire x1="-4.7625" y1="-2.4765" x2="-4.7625" y2="2.4765" width="0.127" layer="21"/>
+<wire x1="-4.953" y1="2.54" x2="4.953" y2="2.54" width="0.127" layer="39"/>
+<wire x1="4.953" y1="2.54" x2="4.953" y2="-2.54" width="0.127" layer="39"/>
+<wire x1="4.953" y1="-2.54" x2="-4.953" y2="-2.54" width="0.127" layer="39"/>
+<wire x1="-4.953" y1="-2.54" x2="-4.953" y2="2.54" width="0.127" layer="39"/>
+<circle x="-3.81" y="1.524" radius="0.5388125" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="1.016" x2="-3.81" y2="2.032" width="0.127" layer="21"/>
+<text x="-2.667" y="1.143" size="0.4064" layer="51" font="vector" ratio="14">1</text>
+<text x="-0.127" y="1.143" size="0.4064" layer="51" font="vector" ratio="14">2</text>
+<text x="2.413" y="1.143" size="0.4064" layer="51" font="vector" ratio="14">3</text>
+<text x="-4.953" y="2.667" size="0.8128" layer="25" font="vector" ratio="14">&gt;NAME</text>
+<text x="-5.08" y="-3.556" size="0.8128" layer="27" font="vector" ratio="14">&gt;VALUE</text>
+</package>
+<package name="R-TRIMMER-67Y_TT_ELEC">
+<description>TT Electronics series 67Y trimmer potentiometer&lt;br&gt;
+Example: TT Elec PN 67YR100KLF,  Digikey PN 987-1501-ND&lt;br&gt;
+0.1" pin spacing</description>
+<pad name="P$1" x="-2.54" y="1.27" drill="0.6" diameter="1.27"/>
+<pad name="P$2" x="0" y="-1.27" drill="0.6" diameter="1.27"/>
+<pad name="P$3" x="2.54" y="1.27" drill="0.6" diameter="1.27"/>
+<wire x1="-4.7625" y1="2.4765" x2="4.7625" y2="2.4765" width="0.127" layer="51"/>
+<wire x1="4.7625" y1="2.4765" x2="4.7625" y2="-2.4765" width="0.127" layer="51"/>
+<wire x1="4.7625" y1="-2.4765" x2="-4.7625" y2="-2.4765" width="0.127" layer="51"/>
+<wire x1="-4.7625" y1="-2.4765" x2="-4.7625" y2="2.4765" width="0.127" layer="51"/>
+<wire x1="-4.7625" y1="2.4765" x2="4.7625" y2="2.4765" width="0.127" layer="21"/>
+<wire x1="4.7625" y1="2.4765" x2="4.7625" y2="-2.4765" width="0.127" layer="21"/>
+<wire x1="4.7625" y1="-2.4765" x2="-4.7625" y2="-2.4765" width="0.127" layer="21"/>
+<wire x1="-4.7625" y1="-2.4765" x2="-4.7625" y2="2.4765" width="0.127" layer="21"/>
+<wire x1="-4.953" y1="2.54" x2="4.953" y2="2.54" width="0.127" layer="39"/>
+<wire x1="4.953" y1="2.54" x2="4.953" y2="-2.54" width="0.127" layer="39"/>
+<wire x1="4.953" y1="-2.54" x2="-4.953" y2="-2.54" width="0.127" layer="39"/>
+<wire x1="-4.953" y1="-2.54" x2="-4.953" y2="2.54" width="0.127" layer="39"/>
+<text x="-5.08" y="2.667" size="0.8128" layer="25" font="vector" ratio="14">&gt;NAME</text>
+<text x="-5.08" y="-3.683" size="0.8128" layer="27" font="vector" ratio="14">&gt;VALUE</text>
+<circle x="-3.937" y="1.651" radius="0.635" width="0.127" layer="21"/>
+<wire x1="-3.937" y1="1.016" x2="-3.937" y2="2.286" width="0.127" layer="21"/>
+<text x="-3.175" y="0" size="0.6096" layer="51">1</text>
+<text x="1.905" y="0" size="0.6096" layer="51">3</text>
+<text x="-0.635" y="0" size="0.6096" layer="51">2</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TRANSFLASH">
@@ -5355,6 +5417,35 @@ Digikey PN 563-1091-1-ND</description>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
 <connect gate="G$1" pin="P$3" pad="P$3_COMMON"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TRIMMER_POTENTIOMETER_TT_ELEC">
+<description>Trimmer potentiometer (variable resistor)&lt;br&gt;
+TT Electronics Series 67 &lt;a href="http://www.bitechnologies.com/pdfs/67.pdf"&gt;http://www.bitechnologies.com/pdfs/67.pdf&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TRIM-POT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="67W" package="R-TRIMMER_67W_TT_ELEC">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="67Y" package="R-TRIMMER-67Y_TT_ELEC">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
