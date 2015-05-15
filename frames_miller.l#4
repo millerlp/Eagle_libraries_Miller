@@ -998,7 +998,7 @@
 <text x="1.27" y="19.05" size="2.54" layer="94">TITLE:</text>
 <text x="1.27" y="11.43" size="2.54" layer="94">Document Number:</text>
 <text x="17.78" y="19.05" size="2.54" layer="94">&gt;DRAWING_NAME</text>
-<text x="2.54" y="30.48" size="2.54" layer="94">Luke Miller</text>
+<text x="2.54" y="30.48" size="2.54" layer="94">Luke Miller email: contact@lukemiller.org</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1413,6 +1413,19 @@ DIN A3, landscape with location and doc. field</description>
 <description>RAHMENA3Q</description>
 <gates>
 <gate name="G$1" symbol="RAHMENA3Q" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DOCFIELD_REVA">
+<description>Use this for Revision A of any designs.</description>
+<gates>
+<gate name="G$1" symbol="DOCFIELD_REVA" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
