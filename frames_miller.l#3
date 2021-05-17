@@ -1594,7 +1594,19 @@ DIN A3, landscape with location and doc. field</description>
 </deviceset>
 <deviceset name="DOCFIELD_REVE">
 <gates>
-<gate name="G$1" symbol="DOCFIELD_REVE" x="-53.34" y="-17.78"/>
+<gate name="G$1" symbol="DOCFIELD_REVE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DOCFIELD_REVF">
+<gates>
+<gate name="G$1" symbol="DOCFIELD_REVF" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
